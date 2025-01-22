@@ -1,38 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Calculator</title>
-    <link rel="stylesheet" href="calculator.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="script.js">
 </head>
+
 <body>
-    <div class="calculator">
-        <input type="text" id="display" disabled>
-        <div class="buttons">
-            <button class="btn" onclick="appendToDisplay('7')">7</button>
-            <button class="btn" onclick="appendToDisplay('8')">8</button>
-            <button class="btn" onclick="appendToDisplay('9')">9</button>
-            <button class="btn operator" onclick="appendToDisplay('+')">+</button>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>My Portfolio</h1>
+            </div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <button class="btn" onclick="appendToDisplay('4')">4</button>
-            <button class="btn" onclick="appendToDisplay('5')">5</button>
-            <button class="btn" onclick="appendToDisplay('6')">6</button>
-            <button class="btn operator" onclick="appendToDisplay('-')">-</button>
-
-            <button class="btn" onclick="appendToDisplay('1')">1</button>
-            <button class="btn" onclick="appendToDisplay('2')">2</button>
-            <button class="btn" onclick="appendToDisplay('3')">3</button>
-            <button class="btn operator" onclick="appendToDisplay('*')">*</button>
-
-            <button class="btn" onclick="appendToDisplay('0')">0</button>
-            <button class="btn" onclick="appendToDisplay('.')">.</button>
-            <button class="btn operator" onclick="calculate()">=</button>
-            <button class="btn operator" onclick="appendToDisplay('/')">/</button>
-
-            <button class="btn clear" onclick="clearDisplay()">C</button>
+    <section id="hero">
+        <div class="hero-content">
+            <img src="C:\Users\admin\Pictures\pic.jpeg">
+            <h2>Hello,Vadithya Nandu</h2>
+            <p>A passionate developer</p>
+            <button id="contactButton">Contact Me</button>
         </div>
-    </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+"This is Vadithya Nandu,
+<br>
+ and I am a second-year student specializing in Artificial Intelligence and Machine Learning (AIML) 
+<br>
+at Kommuri Pratap Reddy Institute of Technology. I'm passionate about advancing my knowledge and skills in technology, particularly in data structures, algorithms, and AI-driven innovations.".</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="C:\Users\admin\Pictures\land.jpeg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>The landing page of spotify using html and css</p> 
+
+
+
+
+
+
+
+                </p>
+            </div>
+            <div class="project">
+                <img src="C:\Users\admin\Pictures\Screenshots\Screenshot (12).png">
+                <h3>Project 2</h3>
+                <p>Designed a Portfolio by using HTML And CSS.</p>
+            </div>
+            <div class="project">
+                <img src="C:\Users\admin\Pictures\calculator.jpeg">
+                <h3>Project 3</h3>
+                <p>A simple calculator built with HTML, CSS, and JavaScript allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division. Below is a brief description of how such a calculator can be created using these technologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="vadithya Nandu" required>
+            <input type="email" id="email" placeholder="vadityanandu@gmail.com" required>
+            <textarea id="message" placeholder="your message."required>
+
+If you'd like, share more details about your portfolio or profession, and I can refine this further!" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Vadithya Nandu. All rights reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
+
 </html>
